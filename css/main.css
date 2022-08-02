@@ -7,11 +7,6 @@ body{
     width: vw;
     background: rgb(5,32,32);
     background: linear-gradient(0deg, rgb(62, 51, 29) 0%, rgb(99, 82, 19) 50%, rgb(193, 183, 127) 100%) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    justify-content: center;
 }
 
 h1{

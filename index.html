@@ -1,19 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Umfrage zur Nutzerakzeptanz von Chatbots</title>
-<script src="script/main.js"></script>
-<link rel="stylesheet" href="css/style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Umfrage zur Nutzerakzeptanz von Chatbots</title>
+    <script src="script/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
 
-    <div id="textbody">
-        <h1>Titel</h1>
-        <p>Text</p>
+<script type="text/javascript">
+    var buttontext = "Zur Umfrage" //Text der auf dem button steht
+    var id = "buttonUmfrage" //Element auf dass der Countdown angewendet wird
+    var zeit = 90 //Solange ist der button gesperrt
+    
+    function buttonsperre()
+    {
+        document.getElementById(id).disabled = true
+        document.getElementById(id).value = buttontext + " " + "(" + zeit + ")" 
+        if(zeit > 0)
+        {
+          zeit--
+          window.setTimeout('buttonsperre()',1000)
+        }
+        else
+        {
+          document.getElementById(id).disabled = false
+          document.getElementById(id).value = buttontext
+        }
+    }
+    </script>
+<body onLoad="buttonsperre()">
+    
     </div>
+        <h1 class="TitelContent"> Umfrage zur Nutzerakzeptanz von Chatbots im Rahmen der Master-Thesis im Studiengang Digital Business Engineering am Herman Hollerith Zentrum Böblingen</h1>
+    </div>
+        <div class="TextContent">
+            <p> Sehr geehrte Damen und Herren, 
+                <br>
+                <br>
+                im Rahmen meiner Master-Thesis untersuche ich die Nutzerakzeptenz von Chatbots im Kundenservice und
+                benötige Ihre Unterstützung dazu. Rechts unten auf der Seite finden Sie ein Chatbot-Prototypen.
+                Ich bitte Sie, erst den Chatbot auszuprobieren und anschließend sich kurz Zeit zu nehmen, 
+                um die dazugehörige Umfrage durchzuführen. 
+                Beim Ausfüllen des Umfragebogens, beziehen Sie sich bitte vor allem auf den Chatbot-Prototypen. <br>
+                <br>
+                Damit Sie genug Zeit für den Chatbot haben, steht Ihnen der Umfragebogen erst nach wenigen Minuten zur Verfügung. :-)
+                Viel Spaß!
+                <br>
+                
+                Ich danke Ihnen für die Teilnahme und Unterstützung! <br>
+                <br>
+    
+                Viele Grüße <br>
+                Ebru Elif Kocak
+            </p>
+        </div>
+        
     <form action="pages/umfrage.html">
-        <input type="submit" value="Zur Umfrage" />
+        <input type="submit" name="submit" value="" id="buttonUmfrage" />
     </form>
 </body>
 </html>

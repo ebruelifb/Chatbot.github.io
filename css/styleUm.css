@@ -13,37 +13,17 @@ h1{
     cursor: default;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
-    text-align: justify;
 }
-
 
 p{
     text-align: center;
     cursor: default;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    text-align: justify;
-}
-
-
-.backbttn {
-    width: 300px;
-}
-
-.TitelContent {
-    width: 60%;
-	text-align: center;
-}
-
-.TextContent {
-
-    width: 45%;
-    display: flex;
-    text-align: justify;
 }
 
 input{
-    background: #685142;;
+    background-color: #685142;;
     border-radius: 5%;
     border-color: #685142;;
     cursor: pointer;
@@ -61,7 +41,7 @@ input:hover{
 }
 
 input{
-    width: 200px;
+    width: 300px;
     height: 55px;
 }
 

@@ -3,6 +3,8 @@
 Diese Repository wurde im Rahmen der Master-Thesis erstellt und enthält die Dokumentation eines Chatbot-Prototyps und den dazugehörigen Umfragebogen. 
 Mit dem Chatbot-Prototypen sollen die Nutzer bzw. Umfrageteilnehmer, sich zuerst an der Technologie versuchen, um eine einheitliche Basis für den Umfragebogen zu erreichen. Hier ist der Link zum Chatbot und zur Umfrage: [ebruelifb.github.io](https://ebruelifb.github.io)
 
+Bei der Darstellung des Chatbots wurde vor allem darauf geachtet, dass der Aspekt der Menschenähnlichkeit miteinbezogen ist und dass der Chatbot Antworten auf Fragen aus dem Kundenservice geben kann. Der Chatbot ist dadurch in der Lage spezifische Informationen aus dem Online Retail der Mode Branche zu liefern. 
+
 ## Chatbot-Prototyp Entwicklung
 
 Der Chatbot wurde auf Basis künstlicher Intelligenz über IBM Watson Assistant erstellt. Die künstliche Intelligenz die hinter IBM Watson Assistant steckt, ist in der Lage Nachrichten im Kontext zu verstehen um dann schnelle, konsistente und genaue Antworten bereitzustellen. Watson Assistant Input-Definitionen die, für das Abfangen von Informationen, verwendet wurden, sind "Intent" und "Entity". Für die Entwicklung des Konversationsablaufs wurden die Assistant Skills "Action" und "Dialog" verwendet. 
